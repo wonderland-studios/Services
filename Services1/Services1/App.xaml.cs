@@ -1,26 +1,21 @@
-﻿using System;
+﻿
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using Services1.Services;
-using Services1.Views;
+
 
 namespace Services1
 {
+    using Views1;
     public partial class App : Application
     {
         //TODO: Replace with *.azurewebsites.net url after deploying backend to Azure
-        public static string AzureBackendUrl = "http://localhost:5000";
-        public static bool UseMockDataStore = true;
+     
 
         public App()
         {
             InitializeComponent();
 
-            if (UseMockDataStore)
-                DependencyService.Register<MockDataStore>();
-            else
-                DependencyService.Register<AzureDataStore>();
-            MainPage = new MainPage();
+          
+            MainPage = new NavigationPage (new ProductsPage());
         }
 
         protected override void OnStart()

@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Services1.ViewModels1
 {
-    class MainViewModel
+    public class MainViewModel
     {
+        public ProductsViewModel Products { get; set; }
+
+        public MainViewModel()
+        {
+            this.Products = new ProductsViewModel();
+        } 
     }
 }
