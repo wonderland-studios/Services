@@ -20,7 +20,10 @@
             <infra:InstaceLocator x:Key="Locator"/>
             
             <!--Parametros-->
+
             <x:String x:Key="UrlAPI">basededatos.com</x:String>
+            <x:String x:Key="UrlPrefix">/api</x:String>
+            <x:String x:Key="UrlController">/Products</x:String>
 
         </ResourceDictionary>
     </Application.Resources>

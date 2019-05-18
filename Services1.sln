@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services1.UWP", "Services1\Services1.UWP\Services1.UWP.csproj", "{01320ADF-2CBA-4907-8B31-DC111D321563}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services1.Android", "Services1\Services1.Android\Services1.Android.csproj", "{8D746B6F-F20B-478B-A596-912004C297E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services1.iOS", "Services1\Services1.iOS\Services1.iOS.csproj", "{9FF836A6-71C8-4F26-80A9-8F179A3A27FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services1.MobileAppService", "Services1\Services1.MobileAppService\Services1.MobileAppService.csproj", "{8305BDED-8C6A-42D0-A809-C61C2BD554E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services1.MobileAppService", "Services1\Services1.MobileAppService\Services1.MobileAppService.csproj", "{8305BDED-8C6A-42D0-A809-C61C2BD554E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services1", "Services1\Services1\Services1.csproj", "{63479A0A-9989-4401-9A5C-32BEA8DB8B70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services1", "Services1\Services1\Services1.csproj", "{63479A0A-9989-4401-9A5C-32BEA8DB8B70}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Backend", "Services.Backend\Services.Backend.csproj", "{423E6986-124A-48A5-B9F3-117F94754BF5}"
 EndProject
@@ -37,42 +35,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|Any CPU.Build.0 = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|Any CPU.Deploy.0 = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|ARM.ActiveCfg = Debug|ARM
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|ARM.Build.0 = Debug|ARM
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|ARM.Deploy.0 = Debug|ARM
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|iPhone.ActiveCfg = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|iPhone.Build.0 = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|iPhone.Deploy.0 = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|iPhoneSimulator.Build.0 = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|iPhoneSimulator.Deploy.0 = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|x64.ActiveCfg = Debug|x64
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|x64.Build.0 = Debug|x64
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|x64.Deploy.0 = Debug|x64
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|x86.ActiveCfg = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|x86.Build.0 = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Debug|x86.Deploy.0 = Debug|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|Any CPU.ActiveCfg = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|Any CPU.Build.0 = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|Any CPU.Deploy.0 = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|ARM.ActiveCfg = Release|ARM
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|ARM.Build.0 = Release|ARM
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|ARM.Deploy.0 = Release|ARM
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|iPhone.ActiveCfg = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|iPhone.Build.0 = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|iPhone.Deploy.0 = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|iPhoneSimulator.ActiveCfg = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|iPhoneSimulator.Build.0 = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|iPhoneSimulator.Deploy.0 = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|x64.ActiveCfg = Release|x64
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|x64.Build.0 = Release|x64
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|x64.Deploy.0 = Release|x64
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|x86.ActiveCfg = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|x86.Build.0 = Release|x86
-		{01320ADF-2CBA-4907-8B31-DC111D321563}.Release|x86.Deploy.0 = Release|x86
 		{8D746B6F-F20B-478B-A596-912004C297E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8D746B6F-F20B-478B-A596-912004C297E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D746B6F-F20B-478B-A596-912004C297E7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU

@@ -6,6 +6,7 @@ namespace Services.Backend.Models
 
     public class LocalDataContext : DataContext
     {
-        public System.Data.Entity.DbSet<Services.Common.Models.Product> Products { get; set; }
+        private System.Data.Entity.DbSet<Common.Models.Product> Products { get; set; }
+
     }
 }

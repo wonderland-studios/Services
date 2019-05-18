@@ -8,7 +8,8 @@ namespace Services1.ViewModels1
     using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
     using global::Services.Common.Models;
-    using Services1.Sales;
+    using Helpers;
+    using Sales;
     using Xamarin.Forms;
 
     public class ProductsViewModel : BaseViewModel
@@ -36,12 +37,21 @@ namespace Services1.ViewModels1
         private async void LoadProducts()
         {
             this.isRefreshing = true;
+            var connection = await this.apiService.CheckConnection();
+            if (!connection.IsSuccess)
+            {
+                this.IsRefreshing = false;
+                await Application.Current.MainPage.DisplayAlert(Languages.Error , connection.Message, Languages.Accept);
+                return;
+            }
             var url: Application.Current.Resources["UrlAPI"].ToString();
-            var response = await this.apiService.GetList<Product>("basededatos.com", "/Api", "/Products");
+            var prefix: Application.Current.Resources["UrlAPI"].ToString();
+            var controller: Application.Current.Resources["UrlAPI"].ToString();
+            var response = await this.apiService.GetList<Product>(url, prefix, controller);
             if (!response.IsSuccess)
             {
                 this.IsRefreshing = false;
-                await Application.Current.MainPage.DisplayAlert("", response.Message, "Alert");
+                await Application.Current.MainPage.DisplayAlert(Languages.Error, response.Message, Languages.Accept);
                 return;
             }
             var list = (List<Product>)response.Result;

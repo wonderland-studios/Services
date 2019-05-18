@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Services.Domain.Models
 {
+    using Common.Models;
+    using System.Data.Entity;
     public class DataContext : DbContext
     {
         public DataContext() : base ("DefaultConnection")
           {
         }
 
-        public System.Data.Entity.DbSet<Services.Common.Models.Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
